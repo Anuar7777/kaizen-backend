@@ -1,9 +1,9 @@
 import { createParamDecorator, ExecutionContext } from '@nestjs/common'
-import { User } from 'generated/prisma'
+import { JwtPayload, RequestWithUser } from 'types'
 
 export const CurrentUser = createParamDecorator(
-	(data: keyof User, ctx: ExecutionContext) => {
-		const request = ctx.switchToHttp().getRequest()
+	(data: keyof JwtPayload, ctx: ExecutionContext) => {
+		const request = ctx.switchToHttp().getRequest<RequestWithUser>()
 		const user = request.user
 
 		return data ? user[data] : user

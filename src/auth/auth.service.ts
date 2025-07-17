@@ -9,6 +9,7 @@ import { UserService } from 'src/user/user.service'
 import { AuthDto } from './dto/auth.dto'
 import { verify } from 'argon2'
 import { Response } from 'express'
+import { JwtPayload } from 'types'
 
 @Injectable()
 export class AuthService {
@@ -50,7 +51,7 @@ export class AuthService {
 	}
 
 	async getNewTokens(refreshToken: string) {
-		const result = await this.jwt.verifyAsync<{ id: string }>(refreshToken)
+		const result = await this.jwt.verifyAsync<JwtPayload>(refreshToken)
 
 		if (!result) {
 			throw new UnauthorizedException('Invalid refresh token')
