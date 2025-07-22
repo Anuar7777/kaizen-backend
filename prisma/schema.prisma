@@ -23,9 +23,9 @@ model User {
   name String?
   password String
 
-  workInterval Int? @default(25) @map("work_interval")
-  breakInterval Int? @default(5) @map("break_interval")
-  intervalCount Int? @default(4) @map("interval_count")
+  workInterval Int @default(25) @map("work_interval")
+  breakInterval Int @default(5) @map("break_interval")
+  intervalCount Int @default(4) @map("interval_count")
 
   tasks Task[]
   timeblocks TimeBlock[]
