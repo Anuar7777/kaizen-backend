@@ -6,7 +6,7 @@ import {
 	IsOptional,
 	IsString,
 } from 'class-validator'
-import { Priority } from 'generated/prisma'
+import { Priority } from '@prisma/client'
 
 export class TaskDto {
 	@IsString()

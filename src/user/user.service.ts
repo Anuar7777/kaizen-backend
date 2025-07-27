@@ -1,6 +1,6 @@
 import { Injectable, NotFoundException } from '@nestjs/common'
 import { hash } from 'argon2'
-import { User } from 'generated/prisma'
+import { User } from '@prisma/client'
 import { AuthDto } from 'src/auth/dto/auth.dto'
 import { PrismaService } from 'src/prisma.service'
 import { userDto } from './dto/user.dto'
