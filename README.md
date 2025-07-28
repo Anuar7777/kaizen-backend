@@ -1,10 +1,10 @@
-## 🚨 **Overview**
+## 🚀 **Overview**
 
 **Kaizen** is a modern full-stack application for efficient task planning and time management. It combines the functionality of classic Kanban boards with advanced time-blocking tools, allowing users to organize both personal and team workflows with maximum flexibility.
 
 👉 This project is **backend only**. Frontend repository: [Kaizen Frontend](https://github.com/Anuar7777/kaizen-frontend)
 
-## ⚙️ **Tech Stack**
+## 🛠 **Tech Stack**
 
 - **NestJS**
 - **TypeScript**
@@ -13,7 +13,7 @@
 - **JWT + Passport**
 - **Docker Compose**
 
-## 🔋 **Features**
+## 🧩 **Features**
 
 - **Authentication**: Sign up, login, logout, and token refresh using JWT and cookie-based sessions.
 - **User Profile**: Retrieve and update user profile.
@@ -21,7 +21,7 @@
 - **Time Blocking**: Manage time blocks, including reordering and updating them.
 - **Pomodoro Timer**: Create and manage Pomodoro sessions, including round tracking.
 
-## 🤸 **Quick Start**
+## ⚡ **Quick Start**
 
 - [Git](https://git-scm.com/)
 - [Node.js](https://nodejs.org/en)
